@@ -5,3 +5,29 @@ $gray-dark: lighten(black, 25%);
 $gray: lighten(black, 50%);
 $white-faded: fade(white, 80%);
 $gray-light: #eee;
+$scale_min: 1.067;
+$scale_max: 1.250;
+$primary-font: 'Roboto Slab', serif;
+$secondary-font: 'Open Sans', sans-serif;
+
+// Calculate Modular Scale
+// You don't need to calculate this with Sass 
+// You can use values from http://type-scale.com/
+// Or random values :)
+$h1-min: $scale_min * $scale_min * $scale_min * $scale_min * 1rem;
+$h1-max: $scale_max * $scale_max * $scale_max * $scale_max * 1rem;
+
+$h2-min: $scale_min * $scale_min * $scale_min * 1rem;
+$h2-max: $scale_max * $scale_max * $scale_max * 1rem;
+
+$h3-min: $scale_min * $scale_min * 1rem;
+$h3-max: $scale_max * $scale_max * 1rem;
+
+$h4-min: $scale_min * 1rem;
+$h4-max: $scale_max * 1rem;
+
+$h5-min: 1rem;
+$h5-max: 1rem;
+
+$h6-min: (1rem / $scale_min);
+$h6-max: (1rem / $scale_max);
