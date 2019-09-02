@@ -187,7 +187,7 @@ hr.small {
 
 		.subheading {
 			@include fluid-type(font-size, 768px, 1280px, 16px, 24px);
-			line-height: 1.1;
+			line-height: 1.4;
 			display: block;
 			font-weight: 300;
 			margin: 10px 0 0;
@@ -234,7 +234,7 @@ hr.small {
 			color: $brand-primary;
 		}
 		> .post-title {
-			font-size: 26px;
+			@include fluid-type(font-size, 320px, 1366px, 26px, 32px);
 			margin-top: 0;
 			margin-bottom: 10px;
 		}
@@ -244,12 +244,12 @@ hr.small {
 			margin-bottom: 10px;
 			font-family: $secondary-font;
 			line-height: 1.4;
-			font-size: 16px;
+			@include fluid-type(font-size, 320px, 1366px, 16px, 22px);
 		}
 	}
 	> .post-meta {
 		color: gray;
-		font-size: 14px;
+		@include fluid-type(font-size, 320px, 1366px, 14px, 18px);
 		font-style: italic;
 		margin-top: 0;
 		> a {
@@ -265,7 +265,7 @@ hr.small {
 	@media only screen and (min-width: 768px) {
 		> a {
 			> .post-title {
-				font-size: 36px;
+				font-weight: 400;
 			}
 		}
 	}
