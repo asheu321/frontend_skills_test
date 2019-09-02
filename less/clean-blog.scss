@@ -27,9 +27,10 @@ h6 {
 
 a {
 	color: $gray-dark;
+	transition: color 0.25s;
 	&:hover,
 	&:focus {
-		color: $brand-primary;
+		color: $default-hover-color;
 	}
 }
 
@@ -82,10 +83,16 @@ hr.small {
 		border-bottom: 1px solid transparent;
 		.navbar-brand {
 			color: white;
-			padding: 20px;
+			padding: 2px;
+			height: auto;
 			&:hover,
 			&:focus {
-				color: $white-faded;
+				color: $brand-primary;
+			}
+
+			> img {
+				max-width: 220px;
+				cursor: pointer;
 			}
 		}
 		.nav {
@@ -93,9 +100,11 @@ hr.small {
 				a {
 					color: white;
 					padding: 20px;
+					transition: color 0.35s;
 					&:hover,
 					&:focus {
-						color: $white-faded;
+						color: $brand-primary;
+						transition: color 0.35s;
 					}
 				}
 			}
@@ -227,16 +236,18 @@ hr.small {
 
 .post-preview {
 	> a {
+		transition: color 0.25s;
 		color: $gray-dark;
 		&:hover,
 		&:focus {
 			text-decoration: none;
-			color: $brand-primary;
+			color: $default-hover-color;
 		}
 		> .post-title {
 			@include fluid-type(font-size, 320px, 1366px, 26px, 32px);
 			margin-top: 0;
 			margin-bottom: 10px;
+			line-height: 1.3;
 		}
 		> .post-subtitle {
 			margin: 0;
