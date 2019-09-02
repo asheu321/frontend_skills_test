@@ -152,6 +152,7 @@ hr.small {
 	background-color: $gray; 
 	background: no-repeat center center; 
 	background-attachment: scroll;
+	min-height: 400px;
 	// NOTE: Background images are set within the HTML using inline CSS!
 	margin-bottom: 50px;
 	.site-heading,
